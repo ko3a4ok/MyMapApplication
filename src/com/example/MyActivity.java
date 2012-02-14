@@ -21,7 +21,7 @@ public class MyActivity extends MapActivity {
     {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.main);
-        Drawable d = getResources().getDrawable(R.drawable.checkbox_empty);
+        Drawable d = getResources().getDrawable(android.R.drawable.star_on);
         d.setBounds(0,0,d.getIntrinsicWidth(), d.getIntrinsicHeight());
         interestingLocation = new InterestingLocation(d);
         map = (MapView) findViewById(R.id.map_id);
@@ -112,7 +112,7 @@ public class MyActivity extends MapActivity {
             boolean r = super.draw(canvas, mapView, b, l);
             Paint p = new Paint();
             p.setAntiAlias(true);
-            p.setColor(0x77ff0000);
+            p.setColor(0x33ff0000);
             canvas.drawCircle(mapView.getWidth()/2, mapView.getHeight()/2, 10f, p);
             Path path = new Path();
             List<Point> ls = getPoints();

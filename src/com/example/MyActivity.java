@@ -112,7 +112,7 @@ public class MyActivity extends MapActivity {
             boolean r = super.draw(canvas, mapView, b, l);
             Paint p = new Paint();
             p.setAntiAlias(true);
-            p.setColor(0x33ff0000);
+            p.setColor(0x33ffff00);
             canvas.drawCircle(mapView.getWidth()/2, mapView.getHeight()/2, 10f, p);
             Path path = new Path();
             List<Point> ls = getPoints();

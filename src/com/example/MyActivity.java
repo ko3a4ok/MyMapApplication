@@ -1,6 +1,5 @@
 package com.example;
 
-import android.app.Activity;
 import android.graphics.Canvas;
 import android.graphics.Paint;
 import android.graphics.Path;
@@ -11,7 +10,10 @@ import android.view.MotionEvent;
 import android.view.View;
 import com.google.android.maps.*;
 
-import java.util.*;
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Comparator;
+import java.util.List;
 
 public class MyActivity extends MapActivity {
     private MapView map;
@@ -111,7 +113,7 @@ public class MyActivity extends MapActivity {
             boolean r = super.draw(canvas, mapView, b, l);
             Paint p = new Paint();
             p.setAntiAlias(true);
-            p.setColor(0x660000ff);
+            p.setColor(0x6600ff00);
             canvas.drawCircle(mapView.getWidth() / 2, mapView.getHeight() / 2, 10f, p);
             Path path = new Path();
             List<Point> ls = getPoints();
